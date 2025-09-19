@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.expensemanager'
+    namespace 'com.example.tableapp'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.expensemanager"
+        applicationId "com.example.tableapp"
         minSdk 24
         targetSdk 34
         versionCode 1
