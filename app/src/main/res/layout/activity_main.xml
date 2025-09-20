@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/addRowBtn"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Row"/>
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TableLayout
-            android:id="@+id/tableLayout"
+
+        <Button
+            android:id="@+id/addRowBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:stretchColumns="*"/>
-    </HorizontalScrollView>
+            android:text="Add Row"/>
+        <Button
+            android:id="@+id/addColumnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Column"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"/>
+        </HorizontalScrollView>
+    </ScrollView>
 </LinearLayout>
